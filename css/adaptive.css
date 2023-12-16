@@ -1,0 +1,151 @@
+@media (min-width: 320px) and (max-width: 425px) { 
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        display: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .banner-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;    
+    }
+
+    .banner-div img {
+        width: 400px;
+    }
+
+    .banner-div_left {
+        display: none;
+    }
+
+    .banner-div_mobile {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .banner-div_mobile h2 {
+        color: #C23909;
+        font-size: 48px;
+        font-family: var(--baron);
+    }
+
+    .banner-div_mobile h1 {
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 100px;
+    }   
+
+    .banner-div_mobile h2 {
+        font-size: 20px;
+    }
+
+    .banner-div_mobile h1 {
+        font-size: 48px;
+    }
+
+    .about-me {
+        display: flex;
+        flex-direction: column;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .about-me_left img {
+        width: 400px;
+    }
+
+    .about-me_right_column {
+        margin-top: 33px;
+        display: flex;
+        flex-direction: column;
+        gap: 62px;
+    }
+
+    .about-me_right {
+        text-align: center;
+    }
+
+    .about-me_right h2 {
+        margin-top: 29px;
+    }
+
+    .about-me_right_row_card {
+        width: auto;
+    }
+
+    .trust-me {
+        display: flex;
+    }
+
+    .trust-me h1 {
+        font-size: 40px;
+    }
+
+    .trust-me_logo {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 33px;
+    }
+
+    .trust-me_logo img {
+        width: auto;
+        max-width: 400px;
+    }
+
+    .communication {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .communication_right {
+        display: none;
+    }
+
+    .communication_mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .communication_mobile h1 {
+        color: white;
+        font-size: 60px;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .communication_left img {
+        width: 400px;
+    }
+
+    .communication_right_buttons {
+        gap: 16px;
+    }
+
+    .orange-button h1 {
+        font-size: 24px;
+    }
+
+    .white-button h1 {
+        font-size: 24px;
+    }
+
+    
+    hr {
+        min-width: 300px;
+        max-width: 405px;
+    }
+
+}
+
+@media (min-width:768px) and (max-width: 1200px) {
+    
+}
