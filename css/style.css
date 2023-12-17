@@ -12,9 +12,9 @@
     --baron: "Sweet Mavka", sans-serif;
 }
 
-
 body {
     background-color: black;
+    color: #fff;
 }
 
 header {
@@ -255,3 +255,44 @@ hr {
     background-color: white;
     width: 1522px;
 }
+
+
+.custom-audio-player {
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Стили для элементов плеера */
+#custom-audio-player {
+    width: 300px;
+    margin: 20px;
+  }
+  
+  .track {
+    margin-bottom: 20px;
+  }
+  
+  .play-pause-btn {
+    width: 50px;
+    height: 50px;
+    background-color: #3498db;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .progress-container {
+    width: 100%;
+    height: 10px;
+    background-color: #ccc;
+    margin-top: 10px;
+    overflow: hidden;
+  }
+  
+  .progress-bar {
+    height: 100%;
+    background-color: #3498db;
+    width: 0;
+    transition: width 0.1s linear;
+  }
