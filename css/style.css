@@ -6,12 +6,13 @@
 }
 
 @font-face {
-    font-family: 'Baron Neue';
+    font-family: 'Sweet Mavka';
     src: url('../font/SweetMavka.otf') format('truetype');
 }
 
 :root {
-    --baron: "Sweet Mavka", sans-serif;
+    --sweet: "Sweet Mavka", sans-serif;
+    --width: 1500px;
 }
 
 body {
@@ -22,11 +23,14 @@ body {
 header {
     display: flex;
     position: absolute;
+    top: 115px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 header nav {
-    margin-top: 115px;
-    margin-left: 218px;
+    width: var(--width);
 }
 
 header nav ul {
@@ -39,19 +43,28 @@ header nav ul li {
 }
 
 header nav ul li a {
-
     font-size: 20px;
     text-decoration: none;
     color: white;
+    transition: all 0.3s ease-in-out;
+}
+header nav ul li a:hover{
+    color:#C23909;
 }
 
 .banner-div {
+    width: 100%;
+    height: 100vh;  
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.banner-div_center{
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: 78px;
-    height: 100vh;
-    max-width: 1920px;
+    width: var(--width);
 }
 
 .banner-div_mobile {
@@ -60,13 +73,13 @@ header nav ul li a {
 
 .banner-div_left {
     color: white;
-    margin-top: 251px;
+    width: 50%;
 }
 
 .banner-div_left h2 {
     color: #C23909;
     font-size: 48px;
-    font-family: var(--baron);
+    font-family: var(--sweet);
 }
 
 .banner-div_left h1 {
@@ -77,13 +90,24 @@ header nav ul li a {
 }
 
 .banner-div_right {
-    margin-top: 121px;
+    width: 50%;
+}
+.banner-div_right img{
+    width: 130%;
 }
 
 .about-me {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 150px;
+}
+
+.about-me_right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
 }
 
 .about-me_right h1 {
@@ -94,16 +118,16 @@ header nav ul li a {
 }
 
 .about-me_right h2 {
+    font-family: var(--sweet);
     color: #C23909;
-    margin-top: 72px;
     text-align: center;
     font-size: 40px;
 }
 
 .about-me_right_column {
     display: flex;
-    gap: 98px;
-    margin-top: 67px;
+    flex-wrap: wrap;
+    gap: 50px;
 }
 
 .about-me_right_row {
@@ -115,12 +139,13 @@ header nav ul li a {
 .about-me_right_row_card {
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: 20px;
     justify-content: center;
     border: 1px solid white;
     border-radius: 20px;
-    width: 421px;
-    height: 266px;
+    width: 46%;
+    height: 240px;
+    padding: 40px;
 }
 
 
@@ -129,16 +154,15 @@ header nav ul li a {
     flex-direction: column;
     font-family: 'Montserrat', sans-serif;
     color: white;
-    font-size: 32px;
+    font-size: 25px;
 }
 
-
-.about-me_left {
-    margin-right: 84px;
+.about-me_left{
+    width: 50%;
 }
-
 .right-bottom {
     display: flex;
+    align-items: baseline;
     flex-direction: column;
 }
 
@@ -165,16 +189,17 @@ header nav ul li a {
 .communication {
     display: flex;
     justify-content: center;
-    /* border: 1px solid white; */
 }
 
-.communication_mobile {
-    display: none;
+.communicationGap{
+    gap: 230px;
+}
+.communication_left{
+    width: 50%;
 }
 
-.communication_right {
-    margin-top: 213px;
-    margin-left: 236px;
+.communication_right{
+    width: 50%;
 }
 
 .communication_right h1 {
@@ -196,7 +221,7 @@ header nav ul li a {
     font-family: 'Montserrat', sans-serif;
     border-radius: 50px;
     padding: 10px;
-    height: 50px;
+    height: 100px;
 }
 
 .orange-button h1 {
@@ -212,7 +237,7 @@ header nav ul li a {
     font-family: 'Montserrat', sans-serif;
     border-radius: 50px;
     padding: 10px;
-    height: 50px;
+    height: 100px;
 }
 
 .white-button h1 {
@@ -229,15 +254,17 @@ header nav ul li a {
 footer {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: 100%;
     align-items: center;
-    height: 400px;
+    width: 100%;
+    margin-top: 100px;
 }
 
 .footer_left {
     display: flex;
     flex-direction: column;
-    margin-right: 551px;
+    width: 50%;
+    gap: 25px;
 }
 
 .footer_left p {
@@ -246,16 +273,24 @@ footer {
     font-size: 20px;
 }
 
+.footer_right{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 40px;
+}
 
 .footer_box {
     display: flex;
-    margin-top: 72px;
+    width: var(--width);
+    padding: 50px 0;
 }
 
 hr {
     color: white;
     background-color: white;
-    width: 1522px;
+    width: var(--width);
 }
 
 
@@ -272,11 +307,12 @@ hr {
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-bottom: 120px;
 }
 
 .audioSlider_block__slide {
-    width: 1064px;
-    height: 450px;
+    width: var(--width);
+    height: 585px;
     display: flex;
     border-radius: 20px;
     border: 1px solid #FFF;
@@ -297,7 +333,7 @@ hr {
     width: 70%;
     display: flex;
     flex-direction: column;
-    gap: 34px;
+    gap: 28px;
     overflow-y: scroll;
 }
 
@@ -411,4 +447,16 @@ hr {
     border-radius: 50%;
     background: #C23909;
     cursor: pointer;
+}
+
+.titleBlock {
+    color: #FFF;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 120px;
 }
