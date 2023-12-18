@@ -48,19 +48,20 @@ header nav ul li a {
     color: white;
     transition: all 0.3s ease-in-out;
 }
-header nav ul li a:hover{
-    color:#C23909;
+
+header nav ul li a:hover {
+    color: #C23909;
 }
 
 .banner-div {
     width: 100%;
-    height: 100vh;  
+    height: 100vh;
     display: flex;
     justify-content: center;
     overflow: hidden;
 }
 
-.banner-div_center{
+.banner-div_center {
     display: flex;
     align-items: center;
     gap: 78px;
@@ -92,7 +93,8 @@ header nav ul li a:hover{
 .banner-div_right {
     width: 50%;
 }
-.banner-div_right img{
+
+.banner-div_right img {
     width: 130%;
 }
 
@@ -103,7 +105,7 @@ header nav ul li a:hover{
     margin-top: 150px;
 }
 
-.about-me_right{
+.about-me_right {
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -157,9 +159,10 @@ header nav ul li a:hover{
     font-size: 25px;
 }
 
-.about-me_left{
+.about-me_left {
     width: 50%;
 }
+
 .right-bottom {
     display: flex;
     align-items: baseline;
@@ -191,14 +194,15 @@ header nav ul li a:hover{
     justify-content: center;
 }
 
-.communicationGap{
+.communicationGap {
     gap: 230px;
 }
-.communication_left{
+
+.communication_left {
     width: 50%;
 }
 
-.communication_right{
+.communication_right {
     width: 50%;
 }
 
@@ -222,9 +226,19 @@ header nav ul li a:hover{
     border-radius: 50px;
     padding: 10px;
     height: 100px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+    font-weight: 600;
+}
+
+.orange-button:hover{
+    background-color: #C23909;
+    color: #fff;
 }
 
 .orange-button h1 {
+    color: #C23909;
     font-size: 20px;
 }
 
@@ -238,7 +252,17 @@ header nav ul li a:hover{
     border-radius: 50px;
     padding: 10px;
     height: 100px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+    font-weight: 600;
 }
+
+.white-button:hover{
+    background-color: #fff;
+    color: #000;
+}
+
 
 .white-button h1 {
     font-size: 20px;
@@ -273,7 +297,7 @@ footer {
     font-size: 20px;
 }
 
-.footer_right{
+.footer_right {
     width: 50%;
     display: flex;
     align-items: center;
@@ -308,6 +332,7 @@ hr {
     display: flex;
     justify-content: center;
     margin-bottom: 120px;
+    position: relative;
 }
 
 .audioSlider_block__slide {
@@ -364,6 +389,7 @@ hr {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    text-align: left;
 }
 
 .audioSlider_block__slide___left____year {
@@ -372,6 +398,7 @@ hr {
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    text-align: left;
 }
 
 .track {
@@ -408,7 +435,7 @@ hr {
     height: 100%;
     background-color: #3498db;
     width: 0;
-    transition: width 0.1s linear;
+    transition: all 0.3s ease-in-out;
 }
 
 .nameAndLine {
@@ -416,6 +443,7 @@ hr {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    align-items: baseline;
 }
 
 .time-info {
@@ -459,4 +487,39 @@ hr {
     width: 100%;
     text-align: center;
     margin-bottom: 120px;
+}
+
+
+/* Стили слайдера */
+.swiper-container {
+    width: var(--width);
+    overflow: hidden;
+}
+
+/* Стили слайдов */
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #000;
+    /* Дополнительные стили */
+}
+
+/* Стили кнопок навигации */
+.swiper-button-next {
+    color: #333;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.swiper-button-prev {
+    color: #333;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after,
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after{
+    color: #fff;
 }
