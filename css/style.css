@@ -3,6 +3,7 @@
     padding: 0;
     font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 @font-face {
@@ -230,6 +231,7 @@ header nav ul li a:hover {
     font-size: 20px;
     transition: all 0.3s ease-in-out;
     font-weight: 600;
+    text-decoration: none;
 }
 
 .orange-button:hover{
@@ -256,6 +258,7 @@ header nav ul li a:hover {
     font-size: 20px;
     transition: all 0.3s ease-in-out;
     font-weight: 600;
+    text-decoration: none;
 }
 
 .white-button:hover{
@@ -289,6 +292,8 @@ footer {
     flex-direction: column;
     width: 50%;
     gap: 25px;
+    font-size: 20px;
+    font-weight: 500;
 }
 
 .footer_left p {
@@ -307,6 +312,7 @@ footer {
 
 .footer_box {
     display: flex;
+    align-items: center;
     width: var(--width);
     padding: 50px 0;
 }
