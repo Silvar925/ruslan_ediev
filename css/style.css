@@ -373,7 +373,7 @@ hr {
 
 .audioSlider_block__slide___left____img {
     width: 100%;
-    flex-shrink: 0;
+    height: 400px;
     overflow: hidden;
 }
 
