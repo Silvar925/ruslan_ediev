@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function () {
+window.addEventListener('load', function () {
     const tracks = document.querySelectorAll('.track');
 
     tracks.forEach(track => {
