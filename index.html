@@ -1,170 +1,96 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/adaptive.css">
-
-    <!-- Подключение стилей Swiper -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-
-    <!-- Подключение Swiper JS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/adaptive.css">
     <title>Руслан Эдиев</title>
 </head>
-
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#me">ОБО МНЕ</a></li>
-                <li><a href="#partner">ПАРТНЕРЫ</a></li>
-                <li><a href="#album">АЛЬБОМЫ</a></li>
-                <li><a href="#contact">КОНТАКТЫ</a></li>
+<header class="header">
+    <nav class="header__menu">
+        <ul class="header__menu-list">
+            <li class="header__menu-item"><a href="#about-me" class="header__menu-link">Обо мне</a></li>
+            <li class="header__menu-item"><a href="#trust" class="header__menu-link">Партнеры</a></li>
+            <li class="header__menu-item"><a href="#" class="header__menu-link">Альбомы</a></li>
+            <li class="header__menu-item"><a href="#communication" class="header__menu-link">Контакты</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="main">
+    <section class="hero">
+        <header class="hero__header">
+            <h3 class="hero__sub-title">Ведущий/Певец</h3>
+            <h2 class="hero__title"><span>Руслан</span><span>Эдиев</span></h2>
+        </header>
+
+        <img src="/img/banner2.png" alt="ruslan_ediev" class="hero__img">
+    </section>
+
+    <section class="about-me" id="about-me">
+        <img src="/img/about-me.png" alt="ruslan__ediev" class="about-me__img">
+        <div class="about-me__inner">
+            <header class="about-me__header">
+                <h2 class="about-me__title">Обо мне</h2>
+            </header>
+
+            <ul class="about-me__list">
+                <li class="about-me__item"><p class="about-me__item-title">7</p>
+                    <p class="about-me__item-text">Лет работы ведущим</p></li>
+                <li class="about-me__item"><p class="about-me__item-title">3</p>
+                    <p class="about-me__item-text">Музыкальных альбома</p></li>
+                <li class="about-me__item"><p class="about-me__item-title">10</p>
+                    <p class="about-me__item-text">Лет игры в КВН</p></li>
+                <li class="about-me__item"><p class="about-me__item-title">20+</p>
+                    <p class="about-me__item-text">Лет на сцене</p></li>
             </ul>
-        </nav>
-    </header>
 
-    <div class="banner-div">
-        <div class="banner-div_center">
-            <div class="banner-div_left">
-                <h2>Ведущий/Певец</h2>
-                <h1><span>РУСЛАН</span> <span>ЭДИЕВ</span></h1>
-            </div>
-
-            <div class="banner-div_right">
-                <img src="img/ruslan bg.png" alt="">
-            </div>
-        </div>
-    </div>
-
-    <section class="about-me" id="me">
-        <div class="banner-div_center">
-            <div class="about-me_left">
-                <img src="img/ruslan2.png" alt="">
-            </div>
-
-            <div class="about-me_right">
-                <h1>ОБО МНЕ</h1>
-
-                <div class="about-me_right_column">
-
-                    <div class="about-me_right_row_card">
-                        <h1>7</h1>
-                        <p> <span>лет работы</span> <span>ведущим</span></p>
-                    </div>
-
-                    <div class="about-me_right_row_card">
-                        <h1>3</h1>
-                        <p> <span>музыкальных</span> <span>альбома</span></p>
-                    </div>
-
-                    <div class="about-me_right_row_card">
-                        <h1>10</h1>
-                        <p><span>лет <br></span> <span>игры в КВН</span></p>
-                    </div>
-
-
-                    <div class="about-me_right_row_card right-bottom">
-                        <p>Более</p>
-                        <h1>20</h1>
-                        <p>лет на сцене</p>
-                    </div>
-
-                </div>
-
-                <h2>Со мной легко и инетресно</h2>
-
-            </div>
+            <h3 class="about-me__sub-title">Со мной легко и интересно</h3>
         </div>
     </section>
 
-    <section class="trust-me" id="partner">
-        <h1>Мне доверяют</h1>
+    <section class="trust" id="trust">
+        <header class="trust__header">
+            <h2 class="trust__title">Мне доверяют</h2>
+        </header>
 
-        <div class="trust-me_logo">
-            <img src="img/logo1.png" alt="#" class="img1">
-            <img src="img/logo2.png" alt="#" class="img2">
-        </div>
-
-    </section>
-
-    <div class="titleBlock" id="album">
-        Альбомы
-    </div>
-
-    <div class="audioSlider">
-        <div class="swiper-container">
-            <div class="swiper-wrapper"></div>
-        </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-    </div>
-
-    <section class="communication" id="contact">
-        <div class="banner-div_center communicationGap">
-            <div class="communication_left">
-                <img src="img/ruslan3.png" alt="">
-            </div>
-
-            <div class="communication_right">
-                <h1>ДЛЯ СВЯЗИ</h1>
-
-                <div class="communication_right_buttons">
-                    <a href="https://t.me/ediev_ruslan" target="_blank" class="orange-button">
-                        НАПИСАТЬ В TELEGRAM
-                    </a>
-
-                    <a href="#" class="white-button">
-                        НАПИСАТЬ В WHATSAPP
-                    </a>
-                </div>
-            </div>
+        <div class="trust__inner">
+            <img src="/img/logo1.png" alt="#" class="trust__img">
+            <img src="/img/logo2.png" alt="#" class="trust__img">
         </div>
     </section>
 
-    <footer>
-        <hr>
+    <section class="communication" id="communication">
+        <img src="/img/ruslan3.png" alt="ruslan" class="communication__img">
+        <div class="communication__inner">
+            <header class="communication__header">
+                <h2 class="communication__title">Для связи</h2>
+            </header>
 
-        <div class="footer_box">
-            <div class="footer_left">
-                Руслан Эдиев © 2023
-            </div>
-
-            <div class="footer_right">
-                <div class="footer_right__img">
-                    <img src="img/logo_alazar_white.png" alt="#">
-                </div>
-                <div class="footer_right__img">
-                    <img src="img/bues.png" alt="#">
-                </div>
-            </div>
+            <ul class="communication__list">
+                <li class="communication__item">
+                    <a href="#" class="communication__button accent-btn">Написать в телеграм</a>
+                </li>
+                <li class="communication__item">
+                    <a href="#" class="communication__button white-btn">Написать в ватсар</a>
+                </li>
+            </ul>
         </div>
+    </section>
 
+    <footer class="footer">
+        <p>Руслан Эдиев © 2023</p>
     </footer>
+</main>
 
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script src="edit.js"></script>
-    <!-- <script type="module" src="edit.js"></script> -->
-    <!-- <script src="js/main.js"></script> -->
-    <script>
-        var mySwiper = new Swiper('.swiper-container', {
-            slidesPerView: 1,
-            spaceBetween: 30,
-            loop: true,
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-        });
-
-    </script>
 </body>
-
 </html>
